@@ -288,8 +288,6 @@ class TestDataCollectorWithAgentTypes(unittest.TestCase):
 
     def test_invalid_agent_type_error(self):
         """Test that passing a non-Agent class raises ValueError during collection."""
-        data_collector = self.model.datacollector
-
         class NotAnAgent:
             pass
 
